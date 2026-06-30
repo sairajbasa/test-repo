@@ -1,7 +1,7 @@
 # A very simple program
 
 # Imagine we are baking a cake
-cake_ready = False   # At first, the cake is not ready
+cake_ready = True   # At first, the cake is not ready
 
 # We check if the cake is baked
 if cake_ready:
