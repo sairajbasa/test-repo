@@ -1,7 +1,6 @@
 # cake_check.py
 
 import time
-
 cake_ready = False   # At first, the cake is not ready
 minutes_waited = 0
 
