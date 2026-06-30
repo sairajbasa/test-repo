@@ -1,17 +1,18 @@
-# A very simple program
+# cake_check.py
 
-# Imagine we are baking a cake
+import time
+
 cake_ready = False   # At first, the cake is not ready
+minutes_waited = 0
 
-# We check if the cake is baked
+while not cake_ready:
+    print(f"Waiting... {minutes_waited} minutes passed.")
+    time.sleep(1)   # pretend 1 second = 1 minute
+    minutes_waited += 1
+
+    if minutes_waited >= 5:   # after 5 minutes, cake is ready
+        cake_ready = True
+
 if cake_ready:
     print("Yay! The cake is ready. Let's eat!")
-else:
-    print("Oops! The cake is not ready yet. Wait a little longer.")
 
-# Added a small extra check
-# Let's also check how many minutes we waited
-minutes_waited = 30
-
-if not cake_ready and minutes_waited > 20:
-    print("We've already waited 30 minutes... maybe check the oven!")
